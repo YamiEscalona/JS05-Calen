@@ -1,0 +1,28 @@
+section{
+    border-width: 5px;
+    border-radius: 40px;
+    background-color: lavender;
+    font-family: 'Dancing Script', cursive;
+}
+fieldset{
+    border-width: 5px;
+    border-radius: 40px;
+}
+p{
+    font-family: 'Pacifico', cursive;
+}
+.Day{
+    text-align: left;
+}
+.Month{
+    text-align: center;
+}
+.Year{
+    text-align: right;
+}
+.btn{
+    margin: 20px;
+}
+#result{
+    margin: 30px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Calendario.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <title>Calendario</title>
+</head>
+
+<body>
+  <header>
+    <h1>Calendario</h1>
+  </header>
+  <main>
+    <section>
+      <fieldset>
+        <legend>Calcular día</legend>
+        <!--Continer para elegir la fecha-->
+        <div class="container">
+          <div class="row">
+            <!--Día-->
+            <div class="col-3">
+              <form action="" method="post">
+                <label class="Day"> Día: <input id="Día" type="number" min="1" max="31"></label>
+            </div>
+            <!--Mes-->
+            <div class="col-3">
+              <label class="Month"> Mes:
+                <select id="Mes" name="month" placeholder="mes">
+                  <option value="1">Enero</option>
+                  <option value="2">Febrero</option>
+                  <option value="3">Marzo</option>
+                  <option value="4">Abril</option>
+                  <option value="5">Mayo</option>
+                  <option value="6">Junio</option>
+                  <option value="7">Julio</option>
+                  <option value="8">Agosto</option>
+                  <option value="9">Septiembre</option>
+                  <option value="10">Octubre</option>
+                  <option value="11">Noviembre</option>
+                  <option value="12">Diciembre</option>
+                </select></label>
+            </div>
+            <!--Año-->
+            <div class="col-3">
+              <label class="Year"> Año: <input type="number" id="Año" min="2000" max="3000" /></label>
+            </div>
+          </div>
+        </div>
+        <!--Botón para calcular-->
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <button onclick="trabajoONo()" type="button" class="btn btn-dark"><i class="bi bi-calendar3"></i> Calcular Fecha</button>
+            </div>
+            <div class="col">
+            </div>
+            <p id="result" class="text-center"><i class="bi bi-calendar2-heart"></i> Se trabajara o no </p>
+          </div>
+        </div>
+      </fieldset>
+    </section>
+  </main>
+  <script src="Calendario.js"></script>
+</body>
+</html>
